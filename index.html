@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Hem and Haw (Website under construction!)</h1>
+    <h1>Hem and Haw</h1>
     <h2>Join a study to <strong>get paid</strong> and <strong>fight for internet privacy!</strong> </h2>
 
     <p class="lead">
@@ -20,8 +20,13 @@
         <h2><strong>What You’ll Do</strong></h2>
         <p>
         <ol>
-            <li>Sign up for a Prolific account</li>
-            <li>Install Hem and Haw, our Firefox extension</li>
+            <li>Sign up for a <a href="https://www.prolific.com/" target="_blank">Prolific</a> account,</li>
+            <li>Install Hem and Haw, our browser extension:
+              <ul>
+                <li><a href="https://addons.mozilla.org/en-CA/firefox/addon/hem-and-haw/" target="_blank">on Firefox</a></li>
+                <li>on Google Chrome (coming soon)</li>
+              </ul>
+            </li>
             <li>(Optional) Paste in your Prolific ID in Hem and Haw to get paid</li>
             <li>Run Hem and Haw in the background and browse as normal!</li>
         </ol>
@@ -42,28 +47,54 @@
     <br>
     <hr>
     <section>
-        <h2 style="text-align:center;"><strong>Why this matters</strong></h2>
+      <h2 style="text-align:center;"><strong>Why This Matters</strong></h2>
+
+      <div class="why-section">
         <h3>What is hashing?</h3>
-        Hash functions are one-way mathematical transformations often used to convert a plaintext input into a seemingly random output.
-        <br>
-       
-        For example, the SHA256 hash of <code>hello</code> is <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code>
+        <p>
+          Hash functions are one-way mathematical transformations used to convert plain text into a seemingly random output.
+        </p>
+        <p>
+          For example, the SHA-256 hash of <code>hello</code> is: <br>
+          <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code>
+        </p>
 
+        <h3>What do companies do with hashing?</h3>
+        <p>
+          Your personally identifiable information (PII), such as email addresses and phone numbers, is often requested by websites and shared with third-party companies 
+          for advertising and analytics. To comply with privacy regulations, many websites claim to <em>“anonymize”</em> this data by applying hash functions before sharing it.
+        </p>
 
-        <br>
-        To do...
+        <p>
+          While hashing can serve legitimate security purposes, research shows that it’s often ineffective for privacy. 
+          Many types of hashed PII can be easily reversed, especially when based on predictable data like phone numbers or email addresses. 
+          This allows third parties to re-identify users, undermining the privacy protections these sites claim to offer.
+        </p>
+
+        <h3>What does Hem and Haw do?</h3>
+        <p>
+          Hem and Haw is a browser extension that detects and reports when websites are transmitting your hashed PII to third-parties by comparing outgoing web traffic
+          against hashed versions of data you provide (like your email or phone number).
+
+        <p>
+          The extension runs silently in the background as you browse. For research purposes, it collects <strongonly>metadata</strong> about when and where 
+          hashed personal identifiers appear in web requests — for example, which websites include them and which companies collect them.
+        </p>
+
+        <p>
+          Your actual personal information and its hashes <strong>never leave your device</strong>. 
+          The extension stores and processes that data locally, using it only to check if it appears in outgoing traffic. 
+          What we receive is anonymized and stripped of any identifying details.
+        </p>
+      </div>
     </section>
+
     <hr>
 
     <section>
         <h2 style="text-align:center;">Frequently Asked Questions</h2>
 
         <div class="faq">
-            <details>
-            <summary>What is Hem and Haw?</summary>
-            <p>Hem and Haw is a Firefox extension. It tells you when websites are sending hashes of your personal information to third parties.</p>
-            </details>
-
             <details>
             <summary>How do I install Hem and Haw?</summary>
             <p>You can install it from the Firefox extension store for free <a target="_blank" href="https://addons.mozilla.org/en-CA/firefox/addon/hem-and-haw">here</a>.</p>
@@ -72,21 +103,44 @@
             <details>
             <summary>How do I use Hem and Haw?</summary>
             <p>You will enter your personal information (such as email addresses, phone numbers, etc.) into Hem and Haw. 
-                The extension will then automatically scan your network traffic for instances of websites sending hashes of your 
-            personal information to third parties. These instances will be reported in a log which you can view.</p>
+              When you press the submit button, the extension will then automatically scan your network traffic for instances of websites sending hashes of your 
+              personal information to third parties. These instances will be reported in a log which you can view.</p>
             </details>
 
             <details>
             <summary>What kind of data is collected?</summary>
-            <p>As part of this University of Calgary study, Hem and Haw will send us the hostname of the website you visited
-                and the hostname of the third party, among other basic information. We will <strong>never</strong> collect 
-            your inputted personal details or your hashed data.</p>
+            <p>As part of this University of Calgary study, whenever a PII hash transmission to a third-party is detected, Hem and Haw will send us the following:
+              <ul>
+                <li>the hostname of the website you visited (ex. www.example.com),</li>
+                <li>the hostname of the third party (ex. www.trackingcompany.com),</li>
+                <li>the type of PII being shared (ex. Email, Phone Number, Zip Code),</li>
+                <li>the type of hash function used (ex. SHA256),</li>
+                <li>whether you declared you use an adblock or not,</li>
+                <li>where in the transmission (HTTP request) the hashed PII was found (ex. url, body, headers).</li>
+              </ul> 
+            </p>
+            </details>
+
+            <details>
+            <summary>How does Hem and Haw protect my privacy?</summary>
+            <p>
+              We will <strong>never</strong> collect your inputted personal information or your hashed data. Additionally, we do not record your IP address or any other
+              identifying information.
+            </p>
+            </details>
+
+            <details>
+            <summary>Can I see my results?</summary>
+            <p>
+              Yes, you can see the hashed PII transmissions detected by Hem and Haw. Simply click on the "See all results" button in the Hem and Haw extension popup.
+            </p>
             </details>
 
             <details>
             <summary>Do I have to use Prolific?</summary>
             <p>Using Prolific is optional. If you want to get paid for participating, we use your Prolific ID to track your usage of Hem and Haw and to issue payments.
-                To receive bonus payment for a week, you must have Hem and Haw running for at least 5 out of 7 days.
+            To receive bonus payment for a week, you must have Hem and Haw running for at least 5 out of 7 days. Your Prolific ID will not be associated with your transmission
+            data.
             </p>
             </details>
         </div>
