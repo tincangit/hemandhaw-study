@@ -52,7 +52,7 @@
       <div class="why-section">
         <h3>What is hashing?</h3>
         <p>
-          Hash functions are one-way mathematical transformations used to convert plain text into a seemingly random output.
+          <a href="https://en.wikipedia.org/wiki/Hash_function" target="_blank">Hash functions</a> are one-way mathematical transformations used to convert plain text into a seemingly random output.
         </p>
         <p>
           For example, the SHA-256 hash of <code>hello</code> is: <br>
@@ -66,7 +66,14 @@
         </p>
 
         <p>
-          While hashing can serve legitimate security purposes, research shows that it’s often ineffective for privacy. 
+          While hashing can serve legitimate security purposes, extensive research 
+          <span title="Demir et al. 2018">
+            <a href="https://ieeexplore.ieee.org/document/8023740/" target="_blank">[1]</a>
+          </span>
+          <span title="Marx et al. 2018">
+            <a href="https://dl.gi.de/handle/20.500.12116/16294" target="_blank">[2]</a>
+          </span>
+          has shown it to be ineffective for PII anonymization. 
           Many types of hashed PII can be easily reversed, especially when based on predictable data like phone numbers or email addresses. 
           This allows third parties to re-identify users, undermining the privacy protections these sites claim to offer.
         </p>
