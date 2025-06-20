@@ -67,30 +67,47 @@ a.contact-link:hover {
     text-decoration: underline;
 }
 
-.firefox-button {
+.firefox-button, .gitlab-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  background: linear-gradient(45deg, #ff7139, #c84fc5);
-  color: white;
-  font-weight: 600;
-  padding: 0.9rem 1.6rem;
-  font-size: 1.1rem;
-  border-radius: 999px;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(200, 79, 197, 0.3);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.firefox-button:hover {
-  background: linear-gradient(45deg, #ff5e14, #a941c0);
-  transform: translateY(-2px);
+  border-radius: 6px;
+  transition: background-color 0.2s ease, border 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .firefox-icon {
   width: 24px;
   height: 24px;
 }
+
+/* Firefox button - blue */
+.firefox-button {
+  background-color: #0059b3;
+  color: white;
+}
+
+.firefox-button:hover {
+  background-color: #003d80;
+}
+
+/* GitLab button - white with orange border/text */
+.gitlab-button {
+  background-color: white;
+  color: #e24329;
+  border: 2px solid #e24329;
+}
+
+.gitlab-button:hover {
+  background-color: #fef1ee;
+  border-color: #cc3a22;
+  color: #cc3a22;
+}
+
 
 .faq details {
   background: #f0f2f5;
