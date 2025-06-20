@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 90%;
+    }
+  </style>
+</head>
+<body>
+    <h1>Hem and Haw Privacy Policy</h1>   
+    <p><strong>Effective Date:</strong> 2025/06/20</p>
+    <hr>
+        
+    <h2>Introduction</h2>
+    <p>
+        Hem and Haw is a browser extension available on Firefox's <a target="_blank" href="https://addons.mozilla.org/en-CA/firefox/addon/hem-and-haw/">add-on store</a>
+        and Google Chrome's <a target="_blank" href="">web store</a>. 
+    </p>
+    <p>
+        This extension detects and reports when hashes of your personally identifiable information (PII)—such as email addresses 
+        and phone numbers—are being sent by websites you visit to third-parties.
+    </p>
+    <p>
+        As part of this University of Calgary study, we collect some data from users of our extension for research purposes.
+    </p>
+    <hr>
+
+
+    <h2>What We Don't Collect</h2>
+        <p>
+            To provide functionality, the Hem and Haw browser extension asks for your PII such as:
+            <ul>
+                <li>Email addresses</li>
+                <li>Phone numbers</li>
+                <li>Dates of birth</li>
+                <li>ZIP codes</li>
+                <li>Other identifiers input by the user</li>
+            </ul>
+            
+            The extension will calculate and save the corresponding hashes of the PII you provide to search for in network traffic.
+        </p>
+        <p>
+            <strong>All PII and corresponding hashes are stored locally</strong> in your browser. This data is <strong>never transmitted</strong> or shared.
+        </p>
+    <hr>
+
+    <h2>What We Collect</h2>
+    <p>
+        For the purposes of our study, whenever Hem and Haw detects a website transmitting a hash of a PII identifier to a third-party,
+        we collect:
+        <ul>
+            <li>the hostname of the website you visited (ex. example.com),</li>
+            <li>the hostname of the third party (ex. trackingcompany.com),</li>
+            <li>the type of PII being shared (ex. Email, Phone Number, Zip Code),</li>
+            <li>the hash function used (ex. SHA256),</li>
+            <li>whether you declared you use an adblock or not,</li>
+            <li>where in the transmission (HTTP request) the hashed PII was found (ex. url, body, headers).</li>
+        </ul> 
+
+        This is triggered only when:
+        <ol>
+            <li>the Hem and Haw extension is enabled and actively searching for PII hash transmissions, and</li>
+            <li>you inputted the PII whose corresponding hash was detected</li>
+        </ol>
+
+        These details are sent from the extension installed on your browser to our server. <strong>We do not record
+        your IP address or any other identifying information.</strong>
+    </p>
+
+    <p>
+        Additionally, if you entered and submitted your Prolific ID on Hem and Haw, the extension will ping our server with your Prolific ID
+        at most once daily. This is to keep track of Prolific participants who are actively using Hem and Haw throughout the week for bonus
+        payment purposes. <strong>We do not record your IP address, any other identifying information. We also only record the date of the ping
+        instead of a full timestamp.
+        </strong> 
+    </p>
+    <hr>
+
+    <h2>How We Use Your Data</h2>
+    <p>
+        Your local extension data (including the PII your provide and its hashes) is stored using the browser's built-in local storage (e.g., <code>browser.storage.local</code>).
+        This means:
+        <ul>
+        <li><strong>This data never leaves your device</strong></li>
+        <li>You can delete all locally stored data by removing the extension or clearing browser storage</li>
+        </ul>
+    </p>
+
+    <p>
+        The non-identifying research data we collect is stored in a protected server at the University of Calgary. 
+        <strong>We do not:</strong>
+        <ul>
+        <li>Send any personal or sensitive data to external servers</li>
+        <li>Share your data with third parties</li>
+        <li>Identify or attempt to identify you uniquely</li>
+        <li>Track or attempt to track you across websites</li>
+        <li>Sell, rent, or trade your information</li>
+        </ul>
+    </p>
+
+    <h2>Your Control</h2>
+    <p>
+        You may delete your hashed PII transmission logs by:
+        <ul>
+            <li>Opening Hem and Haw -> See all results -> Clear your data, or</li>
+            <li>Deleting your entire browsing history (this will trigger the deletion of the logs)</li>
+            <li>Removing the extension from your browser</li>
+        </ul>
+
+        You may delete your provided PII and its hashes by:
+        <ul>
+            <li>Opening Hem and Haw and deleting individual PII or clicking the Clear button, or</li>
+            <li>Removing the extension from your browser</li>
+        </ul>
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        If you have any questions about this privacy policy or how your data is handled, please contact: <br>
+        <a href="mailto:hemandhaw@ucalgary.ca">hemandhaw@ucalgary.ca</a>.
+    </p>
+</body>
+</html>
