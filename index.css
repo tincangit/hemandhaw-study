@@ -67,7 +67,7 @@ a.contact-link:hover {
     text-decoration: underline;
 }
 
-.firefox-button, .gitlab-button {
+.install-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -80,22 +80,35 @@ a.contact-link:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.firefox-icon {
+.install-icon {
   width: 24px;
   height: 24px;
 }
 
-/* Firefox button - blue */
 .firefox-button {
-  background-color: #0059b3;
-  color: white;
+  background-color: white;
+  color: #FF7139;
+  border: 2px solid #FF7139;
 }
 
 .firefox-button:hover {
-  background-color: #003d80;
+  background-color: #fff3ed;
+  border-color: #e85c2b;
+  color: #e85c2b;
 }
 
-/* GitLab button - white with orange border/text */
+.chrome-button {
+  background-color: white;
+  color: #4285F4;
+  border: 2px solid #4285F4;
+}
+
+.chrome-button:hover {
+  background-color: #f1f8ff;
+  border-color: #3367d6;
+  color: #3367d6;
+}
+
 .gitlab-button {
   background-color: white;
   color: #e24329;
