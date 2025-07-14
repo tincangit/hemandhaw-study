@@ -12,7 +12,7 @@
     <h2>Join a study to <strong>get paid</strong> and <strong>fight for internet privacy!</strong> </h2>
 
     <p class="lead">
-      We are conducting a University of Calgary research study on online privacy to better understand how your personal information is shared by companies on the web.
+      We are conducting a University of Calgary research study on online privacy to better understand how your personal identifiable information (PII) is shared by companies on the web.
     </p>
 
     <hr>
@@ -26,11 +26,17 @@
                 <li>on Google Chrome, Brave, Opera, Microsoft Edge, or any other Chromium-based browser through the <a href="https://chromewebstore.google.com/detail/hem-and-haw/cohhnfmlkkancdkcooidfhanchcjljbf" target="_blank">Chrome web store</a></li>
               </ul>
             </li>
-            <li>(Optional) Sign up for a <a href="https://www.prolific.com/" target="_blank">Prolific</a> account,</li>
-            <li>(Optional) Paste in your Prolific ID in Hem and Haw to get paid,</li>
-            <li>Run Hem and Haw in the background and browse as normal!</li>
+            <!-- <li>(Optional) Sign up for a <a href="https://www.prolific.com/" target="_blank">Prolific</a> account,</li>
+            <li>(Optional) Paste in your Prolific ID in Hem and Haw to get paid,</li> -->
+            <li>Open Hem and Haw and enter your personal details (like email or phone number).
+              These stay <strong>entirely local</strong> in your browser and are never sent to us.</li>
+
+            <li>Click <em>Submit</em> to run Hem and Haw in the background.</li>
+            <li>Browse as normal!</li>
         </ol>
         </p>
+
+        <p>Note: Please ignore the Prolific ID section in the extension popup for now.</p>
     </section>
 
     <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
@@ -116,6 +122,21 @@
           The extension stores and processes that data locally, using it only to check if it appears in outgoing traffic. 
           What we receive is anonymized and stripped of any identifying details.
         </p>
+
+
+        <h3>How do I use Hem and Haw?</h3>
+        <p>Once you have installed Hem and Haw on your browser, click on the extension icon to open the popup. 
+          You will then enter your personal information (such as email addresses, phone numbers, etc.) into Hem and Haw. You can add, remove, and modify fields.
+          </p>  
+          
+          <p>
+          Then, when ready, click the <em>Submit</em>  button. The extension will then automatically scan your network traffic for instances of websites sending hashes 
+            of your personal information to third parties. These instances will be reported in a log which you can view using the <em>See all results</em> button.</p>
+
+          <p>
+            As part of our study, the extension popup will ask you how privacy-conscious you are and whether you use an adblock tool or not. Please answer those questions.
+            Ignore the Prolific ID section for now.
+          </p>
       </div>
     </section>
 
@@ -131,13 +152,6 @@
             </details>
 
             <details>
-            <summary>How do I use Hem and Haw?</summary>
-            <p>You will enter your personal information (such as email addresses, phone numbers, etc.) into Hem and Haw. 
-              When you press the submit button, the extension will then automatically scan your network traffic for instances of websites sending hashes of your 
-              personal information to third parties. These instances will be reported in a log which you can view.</p>
-            </details>
-
-            <details>
             <summary>What kind of data is collected?</summary>
             <p>As part of this University of Calgary study, whenever a PII hash transmission to a third-party is detected, Hem and Haw will send us the following:
               <ul>
@@ -146,6 +160,7 @@
                 <li>the type of PII being shared (ex. Email, Phone Number, Zip Code),</li>
                 <li>the hash function used (ex. SHA256),</li>
                 <li>whether you declared you use an adblock or not,</li>
+                <li>how privacy-conscious you declare you are,</li>
                 <li>where in the transmission (HTTP request) the hashed PII was found (ex. url, body, headers).</li>
               </ul> 
             </p>
@@ -167,6 +182,18 @@
             </details>
 
             <details>
+            <summary>Can I delete my results?</summary>
+            <p>
+              Yes, you may delete your hashed PII transmission logs by:
+              <ul>
+                  <li>Opening Hem and Haw -> See all results -> Clear your data, or</li>
+                  <li>Deleting your entire browsing history (this will trigger the deletion of the logs)</li>
+              </ul>
+            </p>
+            </details>
+
+
+            <details>
             <summary>Does Hem and Haw block hashed PII transmissions to third parties?</summary>
             <p>
               No, currently the extension does not block these hash transmissions, it only detects them.
@@ -178,6 +205,10 @@
             <p>Using Prolific is optional. If you want to get paid for participating, we use your Prolific ID to track your usage of Hem and Haw and to issue payments.
             To receive bonus payment for a week, you must have Hem and Haw running for at least 5 out of 7 days. Your Prolific ID will not be associated with your transmission
             data.
+            </p>
+
+            <p>
+              The Prolific study is not set up as of now. Please ignore the Prolific ID section in the extension.
             </p>
             </details>
         </div>
