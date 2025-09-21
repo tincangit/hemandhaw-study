@@ -25,7 +25,7 @@
 </head>
 <body>
     <h1>Hem and Haw Privacy Policy</h1>   
-    <p><strong>Effective Date:</strong> 2025/06/20</p>
+    <p><strong>Effective Date:</strong> 2025/09/21</p>
     <hr>
         
     <h2>Introduction</h2>
@@ -38,7 +38,7 @@
         and phone numbers—are being sent by websites you visit to third-parties.
     </p>
     <p>
-        As part of a University of Calgary study, we collect some data from users of our extension for research purposes.
+        As part of a University of Calgary study (REB25-0355_MOD1), we collect some data from users of our extension for research purposes.
     </p>
     <hr>
 
@@ -68,11 +68,19 @@
         <ul>
             <li>the hostname of the website you visited (ex. example.com),</li>
             <li>the hostname of the third party (ex. trackingcompany.com),</li>
+            <li>the HTTP referer of the transmission,</li>
             <li>the type of PII being shared (ex. Email, Phone Number, Zip Code),</li>
             <li>the hash function used (ex. SHA256),</li>
-            <li>whether you declared you use an adblock or not,</li>
-            <li>how privacy-conscious you declare you are,</li>
-            <li>where in the transmission (HTTP request) the hashed PII was found (ex. url, body, headers).</li>
+            <li>your user-agent string,</li>
+            <li>where in the transmission (HTTP request) the hashed PII was found (ex. url, body, headers),</li>
+            <li>your survey answers which may include:
+                <ul>
+                    <li>whether you declared you use an adblock or not,</li>
+                    <li>how privacy-conscious you declare you are,</li>
+                    <li>what browser you declare you are using,</li>
+                </ul>
+            </li>
+
         </ul> 
 
         This is triggered only when:
@@ -81,20 +89,32 @@
             <li>you inputted the PII whose corresponding hash was detected</li>
         </ol>
 
-        These details are sent from the extension installed on your browser to our server. <strong>We do not record
-        your IP address or any other identifying information.</strong>
+        These details are sent from the extension installed on your browser to our server. 
+
+        We may also occasionally collect your answer to the survey question of whether you have been notified that your data was in a
+        data breach.
+        
+        <strong>We do not record your IP address or any other identifying information.</strong>
     </p>
 
+    <h3>
+        Prolific Users
+    </h3>
     <p>
-        Additionally, if you entered and submitted your Prolific ID on Hem and Haw, the extension will ping our server with your Prolific ID
-        at most once daily. This is to keep track of Prolific participants who are actively using Hem and Haw throughout the week for bonus
-        payment purposes. <strong>We do not record your IP address, any other identifying information. We also only record the date of the ping
-        instead of a full timestamp.
+        If you entered and submitted your Prolific ID on Hem and Haw, you may be eligble for weekly bonus reward payments. To determine whether
+        you are eligible for a weekly bonus, the extension will ping our server with:
+        <ul>
+            <li>your inputted Prolific ID, and</li> 
+            <li>the <strong>number</strong> of unique web domains you've visited today (only up to 10)</li>
+        </ul> 
+        at most once daily. This is to keep track of Prolific participants who are actively using Hem and Haw sufficiently
+        throughout the week for bonus payment purposes. <strong>We do not record your IP address, any other identifying information. 
+        We also only record the date of the ping instead of a full timestamp.
         </strong> 
     </p>
     <hr>
 
-    <h2>How We Use Your Data</h2>
+    <h2>Your Data</h2>
     <p>
         Your local extension data (including the PII your provide and its hashes) is stored using the browser's built-in local storage (e.g., <code>browser.storage.local</code>).
         This means:
@@ -121,12 +141,14 @@
         You may delete your hashed PII transmission logs by:
         <ul>
             <li>Opening Hem and Haw -> See all results -> Clear your data, or</li>
+            <li>Opening Hem and Haw -> See all results -> Clear all Hem and Haw data, or</li>
             <li>Deleting your entire browsing history (this will trigger the deletion of the logs)</li>
         </ul>
 
         You may delete your provided PII and its hashes by:
         <ul>
-            <li>Opening Hem and Haw and deleting individual PII fields or clicking the Clear button</li>
+            <li>Opening Hem and Haw and deleting individual PII fields or clicking the Clear button, or</li>
+            <li>Opening Hem and Haw -> See all results -> Clear all Hem and Haw data.</li>
         </ul>
     </p>
 
