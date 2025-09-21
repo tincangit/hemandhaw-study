@@ -145,3 +145,19 @@ a.contact-link:hover {
   margin-top: 0.5rem;
   color: #444;
 }
+
+.screenshotimg {
+  max-width: 100%; 
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+}
+
+.screenshot-figure {
+  justify-content: center;
+  text-align: center; 
+
+}
+
+.prolific-step {
+    color: #000000;
+}
